@@ -1,3 +1,5 @@
+# описан пайплайн CI/CD.
+# jobs описывает этапы. cначала build-and-test — установка пакетов и запуск тестов. Затем deploy — отправка POST-запроса на Render через секретный UR
 name: CI/CD Pipeline
 
 on:

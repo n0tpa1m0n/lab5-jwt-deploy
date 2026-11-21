@@ -1,3 +1,4 @@
+//  проверяет регистрацию и вход через API 
 const request = require('supertest');
 const express = require('express');
 const authRoutes = require('../routes/authRoutes');
