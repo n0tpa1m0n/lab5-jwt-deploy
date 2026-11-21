@@ -10,7 +10,7 @@ router.post('/logout', authController.logout);
 
 // Защищенный маршрут
 router.get('/protected', authMiddleware, (req, res) => {
-    res.json({ message: 'Доступ разрешен!', user: req.user });
+    res.json({ message: 'Доступ разрешен! 1234', user: req.user });
 });
 
 module.exports = router;
