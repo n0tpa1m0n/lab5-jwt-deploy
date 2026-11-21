@@ -10,7 +10,7 @@ app.use('/api/auth', authRoutes);
 describe('Integration Tests: API', () => {
     it('Должен регистрировать нового пользователя', async () => {
         const res = await request(app)
-            .post('/api/auth/register')
+            .post('/api/auth/registe122')
             .send({ name: 'testuser', email: 'test@test.com', password: '123' });
         
         expect(res.statusCode).toEqual(201);
