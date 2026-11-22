@@ -21,7 +21,7 @@ describe('Integration Tests: API', () => {
         const res = await request(app)
             .post('/api/auth/login')
             .send({ name: 'testuser', password: 'wrongpassword' });
-        
+        //
         expect(res.statusCode).toEqual(401);
     });
 });
