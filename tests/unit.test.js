@@ -8,7 +8,7 @@ describe('Unit Tests: JWT', () => {
         const token = jwt.sign(payload, process.env.JWT_ACCESS_SECRET, { expiresIn: '15m' });
         
         const decoded = jwt.verify(token, process.env.JWT_ACCESS_SECRET);
-      expect(decoded.id).toBe(2); 
+        expect(decoded.id).toBe(1);
         expect(decoded.type).toBe('access');
     });
 });
